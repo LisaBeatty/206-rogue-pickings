@@ -12,7 +12,7 @@ body {
 
 .container{
 	max-width: 1200px;
-	padding: 1em;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -48,6 +48,7 @@ p {
 
 /*The widths are in a percentage!*/
 header {
+	width: 100%;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
@@ -60,12 +61,16 @@ header h1 {
 	float: left;
 	margin: 0;
 	padding: 38px 0 20px 0;
-	border-bottom: 2px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
-
+.line{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px solid #77a466;
+}
 header nav {
 	float: right;
 	padding: 20px 0;
@@ -127,7 +132,7 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 25px;
 }
 
@@ -163,6 +168,7 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	height: 50px;
+	width: 100%;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	clear: both;
@@ -176,4 +182,30 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+/*********TABLET************/
+@media all and (min-width:768px) {
+	.bottom-section {
+		align-items: baseline;
+		justify-content: space-between;
+	}
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 28%;
+		height: auto;
+		float: left;
+		border-top: 1px solid #eee;
+	}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+}
+
+/*********DESKTOP************/
+@media all and (min-width:1200px) {
+
 }
